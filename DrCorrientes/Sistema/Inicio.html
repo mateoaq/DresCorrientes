@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Dr Corrientes</title>
+  </head>
+  <body>
+
+<!--nav  -->
+<nav>
+    <div class="container mt-5 pb-3 pt-3" id="nav">
+        <div class="row offset-lg-4 offset-md-3">
+                <div class="col-12 col-md-2 pb-1 pt-1">
+                          <a href="#" data-toggle="modal" data-target="#alta_paciente"><abbr class="pb-4" id="abbr" data-toggle="tooltip" data-placement="bottom" title="Alta Paciente"><i class="fas fa-user-plus fa-3x zoomIn"></i></abbr></a>  
+
+                </div>
+                <div class="col-12 col-md-2 pb-1 pt-1">
+                           <a href="#" data-toggle="modal" data-target="#filtro"><abbr class="pb-4" id="abbr" data-toggle="tooltip" data-placement="bottom" title="Registros"><i class="fas fa-folder fa-3x zoomIn"></i></abbr></a>     
+
+                </div>
+                <div class="col-12 col-md-2 pb-1 pt-1">
+                            <a href="#"><abbr class="pb-4" id="abbr" data-toggle="tooltip" data-placement="bottom" title="Agenda"><i class="fas fa-calendar-alt fa-3x zoomIn"></i></abbr></a>      
+
+                </div>
+                <div class="col-12 col-md-2 pb-1 pt-1">
+                            <a href="#"><abbr class="pb-4" id="abbr" data-toggle="tooltip" data-placement="bottom" title="Turnos"><i class="fas fa-user-clock fa-3x zoomIn"></i></abbr></a>      
+
+                </div>
+            
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- /nav -->
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    <!-- modal  ALTA-->
+    <div class="modal fade" id="alta_paciente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="alta_paciente-title">Alta de paciente</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Fecha de alta:</label>
+                <input type="date" id="start" name="trip-start"
+                value="2020-04-22"
+                min="2018-01-01" max="2050-12-31">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Apellido:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Nombre:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">DU/DNI:</label>
+                <input type="number" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <select class="custom-select" id="inputGroupSelect01">
+                  <option selected>Sexo</option>
+                  <option value="1">Masculino</option>
+                  <option value="2">Femenino</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Telefono:</label>
+                <input type="number" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Domicilio:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Fecha de nacimiento:</label>
+                <input type="date" id="start" name="trip-start"
+                value="2020-04-22"
+                min="1940-01-01" max="2030-12-31">
+              </div>
+              <div class="form-group">
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <select class="custom-select" id="inputGroupSelect01">
+                      <option selected>Obra Social</option>
+                      <option value="1">IOSCOR</option>
+                      <option value="2">OSDE</option>
+                      <option value="3">OTRA</option>
+                    </select>
+                  </div>
+                  <input type="number" class="form-control" aria-label="Text input with dropdown button" placeholder="Numero de afiliado">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+            <button type="button" class="btn btn-primary">Guardar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- / modal ALTA -->
+    
+    <!-- modal FILTRO -->
+    <div class="modal fade" id="filtro" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Filtro Paciente</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="recipient-name" class="col-form-label">Ingrese letras o documento:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <a href="registros.html"><button type="button" class="btn btn-primary">Filtrar</button></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- modal FILTRO/ -->
+  
+     <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/459500bce4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

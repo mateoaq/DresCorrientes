@@ -1,0 +1,61 @@
+/* Nav */
+
+#nav {
+    border: 1px solid black;
+    border-radius: 50px;
+    will-change: opacity, transform;
+}
+
+#abbr {
+    cursor: pointer;
+}
+
+/* Animation nav */
+@-webkit-keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(3, 3, 3);
+      transform: scale3d(3, 3, 3);
+    }
+  
+    200% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      -webkit-transform: scale3d(3,3,3);
+      transform: scale3d(3,3,3);
+    }
+  
+    200% {
+      opacity: 1;
+    }
+  }
+  
+  .zoomIn:hover {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+    animation-duration: 2s;
+  }
+
+/* Animation nav */
+
+/* Nav / */
+
+
+
+
+
+
+
+/* modal ALTA*/
+
+#start{
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+}
+
+/* / modal ALTA */
